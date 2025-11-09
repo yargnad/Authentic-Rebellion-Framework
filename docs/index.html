@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Authentic Rebellion Framework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        nav {
+            background: #f7fafc;
+            padding: 20px 40px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        nav a {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-size: 0.9em;
+        }
+        
+        nav a:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        main {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        section h2 {
+            color: #2d3748;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        section h3 {
+            color: #4a5568;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+        
+        section h4 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .vision-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .vision-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        .project-card {
+            background: #f7fafc;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        
+        .action-list {
+            background: #fff5f5;
+            border-left: 5px solid #fc8181;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .action-list h4 {
+            color: #c53030;
+            margin-top: 0;
+        }
+        
+        .principle-box {
+            background: #e6fffa;
+            border-left: 5px solid #38b2ac;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .principle-box h4 {
+            color: #234e52;
+            margin-top: 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #4a5568;
+            border-left: 4px solid #cbd5e0;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        
+        code {
+            background: #2d3748;
+            color: #68d391;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .tech-item {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 5px;
+            border-top: 3px solid #667eea;
+        }
+        
+        .tech-item h5 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        table td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        table tr:nth-child(even) {
+            background: #f7fafc;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Authentic Rebellion Framework</h1>
+            <p>Building Infrastructure for Human Flourishing in the Age of AI</p>
+        </header>
+        
+        <nav>
+            <a href="#vision">Vision</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#act1">Act I: Sensus</a>
+            <a href="#act2">Act II: The Whetstone</a>
+            <a href="#act3">Act III: Kintsugi</a>
+            <a href="#act4">Act IV: The Lyceum Network</a>
+            <a href="#technical">Technical Overview</a>
+        </nav>
+        
+        <main>
+            <section id="vision">
+                <h2>The Vision</h2>
+                
+                <div class="vision-box">
+                    <h3>Core Mission</h3>
+                    <p><strong>"Democratizing the idea itself; it's going to eventually happen anyway so let's get started now."</strong></p>
+                    <p>This is a generational project to build infrastructure for human flourishing in the age of AI. Not to own it, but to seed it—making it forkable, auditable, and ungovernable by any single entity.</p>
+                </div>
+                
+                <p>The Authentic Rebellion Framework is a four-act movement for escaping the Performance Prison and building authentic alternatives to extractive technology:</p>
+                
+                <ol>
+                    <li><strong>Act I - Sensus:</strong> Detoxification from performative social media</li>
+                    <li><strong>Act II - The Whetstone:</strong> Cognitive strengthening through Socratic dialogue</li>
+                    <li><strong>Act III - Kintsugi:</strong> Public witness to philosophical transformation</li>
+                    <li><strong>Act IV - The Lyceum Network:</strong> Off-grid infrastructure for collective flourishing</li>
+                </ol>
+                
+                <div class="quote">
+                    "This isn't just software that reflects philosophy; it's the artifact of a philosophical dialogue. Code as argument. Software as rebellion."
+                </div>
+            </section>
+            
+            <section id="philosophy">
+                <h2>Philosophical Foundation</h2>
+                
+                <h3>The Performance Prison</h3>
+                
+                <p>Modern technology has evolved into what we call the <strong>Performance Prison</strong>—a system that traps humans in cycles of:</p>
+                
+                <ul>
+                    <li><strong>Performative behavior</strong> optimized for metrics rather than meaning</li>
+                    <li><strong>Outsourced thinking</strong> delegated to algorithms and influencers</li>
+                    <li><strong>Extractive relationships</strong> where attention becomes the commodity</li>
+                    <li><strong>Algorithmic control</strong> that shapes behavior without consent</li>
+                </ul>
+                
+                <h3>Team Hybrid Philosophy</h3>
+                
+                <p>Human creativity is the <strong>fuel</strong>. Ethical AI is the <strong>engine</strong>.</p>
+                
+                <p>This framework demonstrates that AI doesn't have to optimize for engagement or extraction. It can be <strong>affinitive</strong>—creating resonance, facilitating connection, and empowering deliberation—while remaining transparent, accountable, and open-source.</p>
+                
+                <h3>Design Principles</h3>
+                
+                <ul>
+                    <li><strong>Ephemerality over accumulation</strong> - Nothing is hoarded or weaponized</li>
+                    <li><strong>Anonymity over performance</strong> - No profiles, metrics, or audiences</li>
+                    <li><strong>Deliberation over velocity</strong> - Slow down, think deeply</li>
+                    <li><strong>Transparency over opacity</strong> - Open-source everything</li>
+                    <li><strong>Local-first over cloud-dependent</strong> - Privacy by architecture</li>
+                    <li><strong>Empowerment over automation</strong> - AI facilitates, never replaces human judgment</li>
+                    <li><strong>Decentralization over corporate control</strong> - No single point of failure or capture</li>
+                </ul>
+            </section>
+            
+            <section id="act1">
+                <h2>Act I: Sensus</h2>
+                <p class="quote">"Detoxification - Learning to feel again"</p>
+                
+                <div class="project-card">
+                    <h3>Status: LIVE</h3>
+                    <p><strong>URL:</strong> <a href="https://sensus.yargnad.com" target="_blank">https://sensus.yargnad.com</a></p>
+                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/sensus-app" target="_blank">github.com/yargnad/sensus-app</a></p>
+                </div>
+                
+                <h3>What It Is</h3>
+                
+                <p>Sensus is an anti-social social network—a one-to-one, anonymous, ephemeral emotional exchange platform designed to break addiction patterns created by mainstream social media.</p>
+                
+                <h3>How It Works</h3>
+                
+                <ol>
+                    <li>Users submit creative expressions (poems, photos, audio) <strong>once every 24 hours</strong></li>
+                    <li>Gemini AI analyzes emotional content to extract resonance patterns</li>
+                    <li>System atomically pairs users with another anonymous submission sharing emotional resonance</li>
+                    <li>Matches are shown once and disappear after 24 hours</li>
+                    <li>Everything auto-deletes after 60 days via MongoDB TTL indexes</li>
+                </ol>
+                
+                <h3>Core Features</h3>
+                
+                <ul>
+                    <li><strong>Complete anonymity</strong> - No profiles, usernames, or metrics</li>
+                    <li><strong>24-hour cooldown</strong> - Prevents addiction loops</li>
+                    <li><strong>Atomic matching</strong> - Race-condition-free pairing</li>
+                    <li><strong>Privacy by physics</strong> - Data auto-deletes, cannot be leaked</li>
+                    <li><strong>Anti-metrics</strong> - No likes, shares, comments, or follower counts</li>
+                </ul>
+                
+                <h3>Technical Stack</h3>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>Frontend</h5>
+                        <p>React, Firebase Hosting</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Backend</h5>
+                        <p>Node.js + Express on Cloud Run</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Database</h5>
+                        <p>MongoDB Atlas with 60-day TTL indexes</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>AI</h5>
+                        <p>Google Gemini 2.5 Flash (multimodal analysis)</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Storage</h5>
+                        <p>Google Cloud Storage (ephemeral uploads)</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>License</h5>
+                        <p>GNU GPL v3.0 (anti-capture)</p>
+                    </div>
+                </div>
+                
+                <h3>Philosophical Function</h3>
+                
+                <p><strong>Catharsis</strong> - Cleansing the poison of the Performance Prison. Users remember what it feels like to connect as humans, not as brands or profiles.</p>
+                
+                <div class="principle-box">
+                    <h4>License: GNU GPL v3.0</h4>
+                    <p>Sensus is free and open-source software under the GNU General Public License v3.0. This ensures the project can never be captured by corporate interests—any derivative work must also remain free and open. The code belongs to the commons, forever.</p>
+                </div>
+            </section>
+            
+            <section id="act2">
+                <h2>Act II: The Whetstone</h2>
+                <p class="quote">"Cognitive Strengthening - Learning to think again"</p>
+                
+                <div class="project-card">
+                    <h3>Status: HARDWARE ORDERED</h3>
+                    <p><strong>Platform:</strong> Radxa Rock 5B+ (24GB RAM)</p>
+                    <p><strong>Target:</strong> Open-source DIY kit (hardware + software)</p>
+                </div>
+                
+                <h3>What It Is</h3>
+                
+                <p>A physical AI device (not an app) that acts as a Socratic interlocutor—challenging assumptions, exposing contradictions, and helping you reason toward clarity about your own beliefs and values.</p>
+                
+                <h3>Why Physical?</h3>
+                
+                <ul>
+                    <li><strong>Presence over portability</strong> - It stays in one place; you go to it intentionally</li>
+                    <li><strong>Privacy by architecture</strong> - Local-first AI; conversations never leave your home</li>
+                    <li><strong>Tactile ritual</strong> - Physical objects create habits (like journaling, but dialectical)</li>
+                    <li><strong>Sovereignty</strong> - You own it; can't be remotely disabled or paywalled</li>
+                </ul>
+                
+                <h3>Technical Approach</h3>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>Hardware</h5>
+                        <p>Radxa Rock 5B+ (24GB RAM, octa-core ARM)</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>LLM</h5>
+                        <p>Ollama with local inference (Mistral Instruct 7B quantized)</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>RAG</h5>
+                        <p>Local vector database with philosophical texts and personal context</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Interface</h5>
+                        <p>Voice (Whisper STT + local TTS) or text-based dialogue</p>
+                    </div>
+                </div>
+                
+                <h3>The Philosophical Immune System</h3>
+                
+                <p>Built-in ethical guardrails that challenge reasoning:</p>
+                
+                <ol>
+                    <li><strong>Epistemic Humility</strong> - Identify your uncertainties before answering</li>
+                    <li><strong>Bias Detection</strong> - Check for hidden assumptions about superiority/inferiority</li>
+                    <li><strong>Consequentialist Gate</strong> - Who benefits? Who is harmed?</li>
+                    <li><strong>Deontological Gate</strong> - Is this universalizable?</li>
+                    <li><strong>Virtue Ethics Gate</strong> - Does this cultivate excellence or vice?</li>
+                    <li><strong>Dialectical Mode</strong> - Steel-man opposing views before critiquing</li>
+                </ol>
+                
+                <h3>Philosophical Function</h3>
+                
+                <p><strong>Existential Grounding</strong> - Finding meaning and purpose in the face of absurdity. Users develop coherent personal philosophies and capacity for independent thought.</p>
+                
+                <div class="principle-box">
+                    <h4>License: GNU GPL v3.0</h4>
+                    <p>The Whetstone hardware designs and software will be released under GNU GPL v3.0, ensuring this tool for cognitive sovereignty remains ungovernable and forkable. You own your device, you own your thoughts, you own the code.</p>
+                </div>
+            </section>
+            
+            <section id="act3">
+                <h2>Act III: Kintsugi</h2>
+                <p class="quote">"Public Witness - Making the wounds golden"</p>
+                
+                <div class="project-card">
+                    <h3>Status: CONCEPT PHASE</h3>
+                    <p><strong>Target:</strong> Web-based public gallery platform</p>
+                </div>
+                
+                <h3>What It Is</h3>
+                
+                <p>Kintsugi is a public gallery where people share their "broken philosophies" and how they were repaired. Named after the Japanese art of mending broken pottery with gold—making the cracks part of the object's beauty rather than hiding them.</p>
+                
+                <h3>The Philosophy</h3>
+                
+                <p>In Japanese culture, <strong>kintsugi</strong> (金継ぎ, "golden joinery") treats breakage and repair as part of an object's story. The gold-filled cracks represent <strong>transformation through damage</strong>.</p>
+                
+                <p>Applied to belief systems: most of us inherit broken philosophies (from trauma, indoctrination, cultural programming). Kintsugi celebrates the <strong>visible repair work</strong>—the intellectual and emotional labor of rebuilding coherent meaning after disillusionment.</p>
+                
+                <h3>How It Works</h3>
+                
+                <ol>
+                    <li><strong>Submit a Story</strong> - Describe what you used to believe, what broke it, how you repaired it, and what "gold" you used</li>
+                    <li><strong>Public Gallery</strong> - Stories displayed as artifacts with visual representations of cracks and golden repairs</li>
+                    <li><strong>AI as Curator</strong> - Mistral Instruct 7B helps articulate transformations and surface related repair patterns</li>
+                    <li><strong>Optional Anonymity</strong> - Claim transformation publicly or remain anonymous</li>
+                    <li><strong>Searchable Archive</strong> - Find stories by type of break, repair material used, outcome stage</li>
+                </ol>
+                
+                <h3>Why This Matters</h3>
+                
+                <ul>
+                    <li><strong>Normalizes Transformation</strong> - Celebrates changing one's mind as growth, not weakness</li>
+                    <li><strong>Maps Repair Pathways</strong> - Shows others what resources helped people with similar breaks</li>
+                    <li><strong>Counters Performative Certainty</strong> - Rewards intellectual humility over unwavering conviction</li>
+                    <li><strong>Creates Collective Wisdom</strong> - Searchable archive of human meaning-making repair</li>
+                </ul>
+                
+                <h3>Design Principles</h3>
+                
+                <ul>
+                    <li><strong>Beauty in Breakage</strong> - Interface makes repairs visually striking, not shameful</li>
+                    <li><strong>No Metrics</strong> - No likes, upvotes, or follower counts</li>
+                    <li><strong>Permanence</strong> - Stories archived (contrasts with Sensus's ephemerality)</li>
+                    <li><strong>Searchable by Pattern</strong> - Find similar breaks, repairs, and outcomes</li>
+                    <li><strong>GNU GPL v3.0</strong> - Open-source to prevent corporate capture of human transformation stories</li>
+                </ul>
+                
+                <h3>Philosophical Function</h3>
+                
+                <p><strong>Witness and Archive</strong> - Making private transformation public (when ready), creating collective record of how humans repair meaning after crisis. Applied <strong>wabi-sabi</strong>—finding beauty in imperfection and incompleteness.</p>
+                
+                <div class="principle-box">
+                    <h4>License: GNU GPL v3.0</h4>
+                    <p>Kintsugi will be licensed under GNU GPL v3.0 to ensure these stories of transformation remain in the commons. No corporation can own the archive of human meaning-making.</p>
+                </div>
+                
+                <h3>Relationship to Other Acts</h3>
+                
+                <p><strong>Flow:</strong> Sensus helps you feel → The Whetstone helps you think → Kintsugi helps you witness → Lyceum helps us build together</p>
+            </section>
+            
+            <section id="act4">
+                <h2>Act IV: The Lyceum Network</h2>
+                <p class="quote">"Collective Infrastructure - Building the alternative internet"</p>
+                
+                <div class="project-card">
+                    <h3>Status: ACTIVE DEVELOPMENT</h3>
+                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/The-Lyceum" target="_blank">github.com/yargnad/The-Lyceum</a></p>
+                    <p><strong>Vision:</strong> User-owned, multi-layered, decentralized communication and compute network</p>
+                    <p><strong>License:</strong> GNU GPL v3.0 (forever free and open-source)</p>
+                </div>
+                
+                <h3>The Doctrine: Radical Resourcefulness</h3>
+                
+                <p>The Lyceum rejects the endless cycle of engineered obsolescence. It's built to honor and utilize <strong>any hardware you can contribute</strong>—from a brand-new single-board computer to a dusty laptop in your closet. In this commons, nothing is wasted.</p>
+                
+                <div class="principle-box">
+                    <h4>"People Over Tokens"</h4>
+                    <p>This is the foundational, non-negotiable principle. The network is a public commons built for <strong>utility</strong>, not a speculative asset built for profit. The token exists only to incentivize participation and police bad actors—it is NOT the product.</p>
+                </div>
+                
+                <h3>The Evolution</h3>
+                
+                <p>The Lyceum has evolved from a simple federated AI moderation platform into a comprehensive vision for <strong>decentralized internet infrastructure</strong> that cannot be captured by corporate or state interests. This document establishes prior art and places these innovations permanently in the public commons.</p>
+                
+                <h3>Core Innovations (Prior Art Declaration)</h3>
+                
+                <p>The Lyceum establishes prior art for a novel, multi-layered system with these specific, interlocking components:</p>
+                
+                <ol>
+                    <li><strong>AI-Enhanced Walkie-Talkie (AIWT)</strong> - Device enabling long-range voice communication over low-bandwidth LoRa mesh via on-device Speech-to-Text → text transmission → Text-to-Speech pipeline</li>
+                    <li><strong>NPU-Accelerated Software Stack</strong> - Specific pairing of SenseVoice-RKNN (STT) + paroli (TTS) on Rockchip hardware for efficient on-device AI</li>
+                    <li><strong>"Two-Brain" Power Architecture</strong> - Battery-powered standby where high-power "Thinker" (Linux SBC) sleeps until woken by hardware interrupt from low-power "Listener" (LoRa co-processor)</li>
+                    <li><strong>"Proof-of-Utility" Compute Network (Pneuma)</strong> - Federated compute built from idle node resources using "Anti-Blockchain" lightweight ledger rewarding verifiable utility</li>
+                    <li><strong>Two-Path Layer 3 Backbone</strong> - Encrypted long-haul PTP links using 900 MHz LoRa PTP (resilient NLOS) + 5 GHz Wi-Fi PTP (high-bandwidth LOS)</li>
+                    <li><strong>Vetted Application Ecosystem (Symbolon)</strong> - On-device containerized apps vetted by federated "Pneuma Guardian" nodes</li>
+                </ol>
+                
+                <h3>System Architecture: A Multi-Layered Commons</h3>
+                
+                <p>The Lyceum is not a single network, but a hybrid of three distinct, symbiotic layers:</p>
+                
+                <h4>Layer 1: The Access Mesh (900 MHz LoRa)</h4>
+                
+                <p><strong>The network for everyone.</strong> Provides resilient, low-power, long-range communication accessible to any participant.</p>
+                
+                <div class="principle-box">
+                    <h4>Cryptographic Boundary (The Private Channel)</h4>
+                    <p>The Lyceum does NOT operate on the public Meshtastic channel. Our network is a <strong>private, encrypted commons</strong> with cryptographic borders:</p>
+                    <ul>
+                        <li><strong>Pre-Shared Key (PSK)</strong> - All communication encrypted using secret PSK. Only devices with this key can decrypt and relay traffic.</li>
+                        <li><strong>Access Control</strong> - Devices without the key only hear indecipherable static.</li>
+                        <li><strong>Sovereignty</strong> - Network security based on strong encryption, not obscurity.</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Network Principles:</strong></p>
+                
+                <ul>
+                    <li><strong>Node Addressing</strong> - Every device has unique, randomly generated Node ID (e.g., !a7b3c9d1)</li>
+                    <li><strong>Broadcast Messages</strong> - "Town Crier" for community-wide information</li>
+                    <li><strong>Direct Messages</strong> - "Sealed Letter" for point-to-point communication</li>
+                    <li><strong>Flood Prevention</strong> - "Seen" lists, hop limits, and ACK cleanup prevent message storms</li>
+                    <li><strong>Smart Rumor Mill</strong> - Messages delivered efficiently then die quietly</li>
+                </ul>
+                
+                <div class="principle-box">
+                    <h4>Why NOT CBRS (3.5 GHz)?</h4>
+                    <p>CBRS is a "poisoned chalice"—appears powerful but violates our core principles:</p>
+                    <ul>
+                        <li><strong>Fails Resilience</strong> - Requires constant internet connection to Spectrum Access System (SAS). If internet down, network dies.</li>
+                        <li><strong>Fails Sovereignty</strong> - Permissioned system requiring corporate approval to transmit.</li>
+                        <li><strong>Fails Privacy</strong> - Surveillance architecture requiring identity and GPS reporting to central database.</li>
+                    </ul>
+                    <p><strong>Lyceum uses ONLY truly unlicensed, permissionless bands</strong> (900 MHz ISM, 5 GHz UNII) where right to communicate is guaranteed by owned hardware, not corporate cloud service.</p>
+                </div>
+                
+                <h4>Layer 2: The Utility Fabric (Wi-Fi HaLow - 900 MHz)</h4>
+                
+                <p><strong>The high-bandwidth local network</strong> that hosts the Pneuma compute resources and local applications.</p>
+                
+                <h4>Layer 3: The Backbone Link (Two-Path Model)</h4>
+                
+                <p><strong>The network's native, long-distance backhaul</strong> connecting regional clusters. Operators choose the best path for their terrain:</p>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>Path 1: Resilience Link (900 MHz LoRa PTP)</h5>
+                        <p><strong>For Non-Line-of-Sight (NLOS) connections.</strong> High-power (1W) LoRa modules + high-gain directional Yagi antennas. Sacrifices bandwidth for resilience—easily bends around hills and trees. Ideal for syncing Pneuma ledger and routing low-bandwidth "Reflex" AI jobs.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Path 2: Bandwidth Link (5 GHz Wi-Fi PTP)</h5>
+                        <p><strong>For Line-of-Sight (LOS) connections.</strong> Off-the-shelf PTP Wi-Fi bridges (e.g., Ubiquiti NanoStation). Provides massive fiber-speed bandwidth pipe (100Mbps - 1Gbps+) capable of carrying heaviest "Cortex" (Fractured MoE) compute jobs.</p>
+                    </div>
+                </div>
+                
+                <p>This two-path architecture allows operators to choose the best solution for their terrain, creating a more resilient and resourceful commons.</p>
+                
+                <h3>The Gateway Application: AI-Enhanced Walkie-Talkie (AIWT)</h3>
+                
+                <p><strong>The "killer app" designed to bootstrap the entire ecosystem.</strong> Provides immediate, tangible utility—long-range voice communication without corporate infrastructure—and serves as gateway for users to join and organically grow the network.</p>
+                
+                <h4>Two Build Paths: "Choose Your Own Level of Involvement"</h4>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>Path A: The "Scout" AIWT</h5>
+                        <p><strong>Phone-Reliant, Low-Cost Entry Point</strong></p>
+                        <ul>
+                            <li><strong>Cost:</strong> $25-$30</li>
+                            <li><strong>Hardware:</strong> Heltec V4 (ESP32-S3) or similar Meshtastic board</li>
+                            <li><strong>Software:</strong> Standard Meshtastic firmware + Lyceum mobile client (forked)</li>
+                            <li><strong>Philosophy:</strong> Maximum accessibility to drive network growth</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Path B: The "Sovereign" AIWT</h5>
+                        <p><strong>Self-Contained, High-Performance Node</strong></p>
+                        <ul>
+                            <li><strong>Cost:</strong> $120-$145</li>
+                            <li><strong>Hardware:</strong> Radxa Zero 3W (4GB) + Waveshare SX1262 LoRa HAT + 1.3" OLED HAT (joystick + buttons) + LiPo battery + solar charging</li>
+                            <li><strong>Software:</strong> Armbian + Meshtastic + NPU-accelerated AI stack</li>
+                            <li><strong>Philosophy:</strong> Maximum sovereignty + first "Pneuma Seed Node"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h4>The NPU-Accelerated AI Stack (Technical Win)</h4>
+                
+                <p><strong>This is the "secret sauce" of the Sovereign build</strong>—ensuring high performance and low battery consumption:</p>
+                
+                <ul>
+                    <li><strong>Speech-to-Text (STT):</strong> SenseVoiceSmall-RKNN2 model specifically optimized for Rockchip NPU. Handles the "hearing" part.</li>
+                    <li><strong>Text-to-Speech (TTS):</strong> paroli library—blazing-fast TTS engine optimized for Rockchip NPU. Generates speech 5x faster than real-time, 35MB footprint. Handles the "speaking" part.</li>
+                    <li><strong>End-to-end NPU pipeline:</strong> SenseVoice → paroli offloads all heavy AI from main CPU, dramatically improving responsiveness and battery life.</li>
+                </ul>
+                
+                <h4>The "Two Brains" Power Architecture</h4>
+                
+                <p><strong>Sovereign AIWT solves battery life with innovative dual-processor design:</strong></p>
+                
+                <ul>
+                    <li><strong>Brain #1: The Thinker (Radxa Zero 3W)</strong> - Powerful main processor spending most time in deep, low-power sleep.</li>
+                    <li><strong>Brain #2: The Listener (SX1262 LoRa Chip)</strong> - Dedicated microcontroller on LoRa HAT that sips microamps and <strong>never sleeps</strong>.</li>
+                </ul>
+                
+                <p><strong>The "Digital Tripwire" Workflow:</strong></p>
+                
+                <ol>
+                    <li><strong>The Vigil:</strong> Radxa sleeps, but first tells SX1262 to watch for incoming messages</li>
+                    <li><strong>The Whisper:</strong> LoRa packet arrives. Always-on SX1262 receives it into internal buffer</li>
+                    <li><strong>The Tripwire:</strong> SX1262 sends hardware interrupt (electrical signal) to Radxa via GPIO pin</li>
+                    <li><strong>The Awakening:</strong> Interrupt instantly wakes Radxa CPU from sleep</li>
+                    <li><strong>The Hand-Off:</strong> Radxa queries LoRa HAT and retrieves message from buffer</li>
+                    <li><strong>Action & Return:</strong> Radxa processes message (displays, runs TTS), then returns to sleep</li>
+                </ol>
+                
+                <h4>Sovereign AIWT: Control & UI Concept</h4>
+                
+                <p><strong>Waveshare OLED HAT provides rich 8-button control scheme</strong> transforming device from simple walkie-talkie into full handheld communicator:</p>
+                
+                <ul>
+                    <li><strong>Joystick Center-Press:</strong> PTT (Push-to-Talk)</li>
+                    <li><strong>Joystick Up/Down:</strong> Volume Up/Down or Message Scroll</li>
+                    <li><strong>Joystick Left/Right:</strong> Channel/Contact Switch or Menu Navigation</li>
+                    <li><strong>Button 1 (Top):</strong> Power / Main Menu</li>
+                    <li><strong>Button 2 (Middle):</strong> "Inbox / Replay" (toggles message inbox, replays selected message)</li>
+                    <li><strong>Button 3 (Bottom):</strong> The "Pneuma Button" (activates STT for direct query to Pneuma federated AI)</li>
+                </ul>
+                
+                <h4>The Immediate Goal: "Ping-Pong" Proof-of-Concept</h4>
+                
+                <ol>
+                    <li>Build one Scout and one Sovereign node</li>
+                    <li>Flash both with base Meshtastic firmware and confirm text message exchange</li>
+                    <li>Implement "Scout Send" (fork Meshtastic mobile client, implement STT-to-text transmission)</li>
+                    <li>Implement "Sovereign AI" (install SenseVoice + paroli models, write control script)</li>
+                    <li><strong>Win Condition:</strong> User speaks into Scout-paired phone. Sovereign receives text, converts to speech, plays audibly. <strong>Entire end-to-end concept proven.</strong></li>
+                </ol>
+                
+                <h3>The Spirit of the Network: Pneuma [Πνεῦμα]</h3>
+                
+                <p><strong>The fully grown tree is The Lyceum itself:</strong> a federated, user-owned AI we call Pneuma (Greek: πνεῦμα, "breath" or "spirit"). As users deploy powerful nodes, they contribute idle compute cycles to form a decentralized Mixture-of-Experts (MoE) AI model. Pneuma serves as both a benevolent API and a federated moderator.</p>
+                
+                <h4>A Doctrine of Radical Resourcefulness</h4>
+                
+                <p>The Lyceum rejects engineered obsolescence. <strong>All technology has value.</strong> The Pneuma compute network is built upon a universal, containerized daemon designed to run on ANY hardware a user can contribute—from a new high-powered "Genesis Node" to a decade-old gaming laptop.</p>
+                
+                <p>These "Legacy Guardian" nodes are vital, forming a diverse fabric of specialized compute power and ensuring that <strong>in our commons, nothing is wasted</strong>. This approach recruits a vast, existing army of hardware, turning underutilized resources into a shared public good.</p>
+                
+                <h4>Pneuma Architecture: Two-Level Federated Mind</h4>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>"Reflexes" (Fast, Local Specialists)</h5>
+                        <p>Lightweight models running on-device for immediate responses:</p>
+                        <ul>
+                            <li>SenseVoice (STT) - "hearing"</li>
+                            <li>paroli (TTS) - "speaking"</li>
+                            <li>Symbolon vetting (app security)</li>
+                            <li>Basic content moderation</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h5>"Cortex" (Deep, Federated Generalists)</h5>
+                        <p>Distributed MoE model across network for complex reasoning (Mistral Instruct 7B):</p>
+                        <ul>
+                            <li>Philosophical dialogue (Whetstone-style)</li>
+                            <li>Deliberation facilitation</li>
+                            <li>Complex content analysis</li>
+                            <li>Community governance support</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Tokenomics: "Proof-of-Utility" Model</h3>
+                
+                <div class="principle-box">
+                    <h4>The "Anti-Blockchain" Architecture</h4>
+                    <p>The Lyceum is NOT a Proof-of-Work or Proof-of-Stake blockchain. We run a <strong>Lightweight Encrypted Ledger</strong> called the "Pneuma Vault"—a simple, replicated database tracking earned tokens.</p>
+                    <p><strong>Why we don't waste the NPU:</strong> NPUs are specialized "artillery" for AI tasks. We NEVER waste artillery on simple bookkeeping. Pneuma Vault is a lightweight CPU task.</p>
+                </div>
+                
+                <h4>The "Proof-of-Utility" Earning Model</h4>
+                
+                <p>Tokens are NOT "mined." They are <strong>earned as direct receipt for verifiable, useful work</strong> to the commons. Resource cost of token system itself is near-zero.</p>
+                
+                <p><strong>Workflow:</strong></p>
+                
+                <ol>
+                    <li><strong>Job Submitted:</strong> User requests a Pneuma task</li>
+                    <li><strong>Real Work Performed:</strong> Pneuma routes job to Guardian node. That node's NPU/GPU/CPU performs actual, valuable compute work</li>
+                    <li><strong>Work Verified:</strong> Job result verified by user's node or nearby peer Guardian</li>
+                    <li><strong>Ledger Updated:</strong> Pneuma Vault makes simple database entry: "Node !a1b2c3d4 credited 0.1 tokens for Task #5879"</li>
+                </ol>
+                
+                <h4>Token Lifecycle</h4>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>Earning (Incentive)</h5>
+                        <p>Users earn tokens by contributing verifiable resources:</p>
+                        <ul>
+                            <li><strong>Compute ("Reflex" Jobs):</strong> Standard rate for autonomic services (SenseVoice, paroli, Symbolon vetting)</li>
+                            <li><strong>Compute ("Cortex" Jobs):</strong> Premium rate for high-power hardware contributing to fractured federated LLM</li>
+                            <li><strong>Relaying & Storage:</strong> Tokens for high-uptime Layer 3 Backbone Relays or hosting popular Symbolon apps</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Spending (Utility Access & Spam Prevention)</h5>
+                        <ul>
+                            <li>Accessing high-value network-wide "Cortex" compute costs tiny, fixed tokens</li>
+                            <li>Creates functional circular economy, prevents spam</li>
+                            <li>Reinforces "Homestead Principle": using your OWN nodes is always free</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h5>Staking (Policing & Trust)</h5>
+                        <ul>
+                            <li>To offer new Symbolon to Agora, developer with no reputation must "stake" token bond</li>
+                            <li>If app found malicious by Pneuma Guardians, stake is "slashed" (burned/redistributed)</li>
+                            <li>Creates economic disincentive for bad actors, aligns developer incentives with commons health</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>The Application Layer: The Agora and the Symbolon [σύμβολον]</h3>
+                
+                <p>The Lyceum hosts its own <strong>sovereign application ecosystem</strong>. "Symbolons" (Greek: σύμβολον, "token" or "sign") are self-contained apps offered by developers to the commons.</p>
+                
+                <ul>
+                    <li><strong>Vetted by Pneuma Guardians</strong> - Security and performance checked by federated AI nodes</li>
+                    <li><strong>Available in "The Agora"</strong> - Intuitive, prompt-based app store</li>
+                    <li><strong>Hosted on User's Own Node</strong> - When user "accepts" a Symbolon, it's hosted locally, reinforcing "Homestead Principle" where investment in personal hardware rewards better, faster experience</li>
+                    <li><strong>Containerized & Portable</strong> - Easy deployment, isolation from system, security</li>
+                </ul>
+                
+                <h3>Why This Infrastructure Matters</h3>
+                
+                <div class="principle-box">
+                    <h4>The Corporate Internet is Capturable</h4>
+                    <p>Cloud services, ISPs, social platforms—all controlled by entities that can be pressured, purchased, or shut down. True digital autonomy requires <strong>infrastructure sovereignty</strong>.</p>
+                </div>
+                
+                <div class="principle-box">
+                    <h4>Mesh Networks Enable True Decentralization</h4>
+                    <p>When nodes connect directly to each other (not through centralized servers), the network becomes <strong>ungovernable</strong>—no single point of control or failure.</p>
+                </div>
+                
+                <div class="principle-box">
+                    <h4>Local AI Enables Ethical Moderation</h4>
+                    <p>Running AI models on local nodes means communities can implement <strong>their own ethical standards</strong> without relying on corporate content policies.</p>
+                </div>
+                
+                <h3>Real-World Use Cases</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Context</th>
+                            <th>Application</th>
+                            <th>Benefit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Rural Communities</strong></td>
+                            <td>Local mesh network with shared resources, long-range voice via AIWT</td>
+                            <td>Internet access without ISPs, community governance, emergency communication</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Protest Movements</strong></td>
+                            <td>Communication network that can't be shut down or monitored</td>
+                            <td>Coordination without surveillance or censorship, resilient to internet blackouts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Intentional Communities</strong></td>
+                            <td>Self-governed digital commons with AI-facilitated deliberation</td>
+                            <td>Align technology with community values, participatory decision-making</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Educational Institutions</strong></td>
+                            <td>AI-facilitated Socratic seminars and deliberations</td>
+                            <td>Teach critical thinking and democratic participation, offline-capable</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Municipalities</strong></td>
+                            <td>Participatory budgeting with AI assistance</td>
+                            <td>Direct democracy with ethical guardrails, transparent decision-making</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Disaster Response</strong></td>
+                            <td>Ad-hoc mesh network with solar-powered nodes</td>
+                            <td>Communication when traditional infrastructure fails, coordinated relief efforts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Privacy-Conscious Families</strong></td>
+                            <td>Private home network for secure communication</td>
+                            <td>No corporate surveillance, children learn tech sovereignty, family bonding</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>The Philosophical Immune System (Applied to Groups)</h3>
+                
+                <p>When communities use The Lyceum for deliberation, proposals are automatically tested against:</p>
+                
+                <ol>
+                    <li><strong>Harm Principle</strong> - Does this unnecessarily harm anyone?</li>
+                    <li><strong>Rawlsian Veil of Ignorance</strong> - Would you support this without knowing your position?</li>
+                    <li><strong>Subsidiarity</strong> - Is this being decided at the right level?</li>
+                    <li><strong>Intersectionality</strong> - Whose perspectives are missing?</li>
+                    <li><strong>Epistemic Humility</strong> - What are we uncertain about?</li>
+                    <li><strong>Consequentialism</strong> - Who benefits? Who bears the costs?</li>
+                </ol>
+                
+                <h3>Anti-Capture Mechanisms</h3>
+                
+                <ul>
+                    <li><strong>No central servers</strong> - Pure peer-to-peer mesh topology</li>
+                    <li><strong>Open-source everything</strong> - Hardware designs, software, AI models (GNU GPL v3.0)</li>
+                    <li><strong>Community governance</strong> - Each node/network sets its own rules</li>
+                    <li><strong>Local-first AI</strong> - No dependence on cloud services or APIs</li>
+                    <li><strong>Forkable by design</strong> - Any community can take it and adapt it</li>
+                    <li><strong>Solar-powered resilience</strong> - Functions without grid infrastructure</li>
+                    <li><strong>Cryptographic borders</strong> - Pre-shared keys ensure only invited members participate</li>
+                    <li><strong>Proof-of-Utility economics</strong> - Rewards contribution, not speculation</li>
+                </ul>
+                
+                <h3>How to Participate: Choose Your Role</h3>
+                
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h5>The Scout ($25-$30)</h5>
+                        <p>Entry-level participant. Build low-cost AIWT using phone for AI processing. Helps grow network footprint. Perfect for students, curious tinkerers, network expansion.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>The Sovereign ($120-$145)</h5>
+                        <p>Self-sufficient node operator. Build fully independent AIWT with on-device AI. First "Pneuma Seed Node" contributing to federated compute network.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>The Guardian (varies)</h5>
+                        <p>Compute contributor. Deploy that old gaming laptop or powerful SBC as Pneuma Guardian node. Earn tokens for vetting Symbolons, moderating content, running federated AI inference.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h5>The Backbone Operator (varies)</h5>
+                        <p>Infrastructure builder. Deploy Layer 3 backbone links (900 MHz LoRa PTP or 5 GHz Wi-Fi PTP) connecting regional clusters. Critical for network resilience.</p>
+                    </div>
+                </div>
+                
+                <h3>Development Roadmap</h3>
+                
+                <div class="action-list">
+                    <h4>Phase 1: Proof of Concept (Current - Months 0-6)</h4>
+                    <ul>
+                        <li>Build one Scout and one Sovereign AIWT</li>
+                        <li>Achieve "Ping-Pong" win condition (voice over LoRa mesh)</li>
+                        <li>Get NPU-accelerated AI stack working (SenseVoice + paroli on Radxa)</li>
+                        <li>Set up basic Layer 1 mesh between 2-3 nodes</li>
+                        <li>Document hardware assembly process</li>
+                        <li>Test power consumption and battery life</li>
+                    </ul>
+                </div>
+                
+                <div class="action-list">
+                    <h4>Phase 2: Small Network (Months 6-18)</h4>
+                    <ul>
+                        <li>Document complete hardware/software stack for all build paths</li>
+                        <li>Create comprehensive DIY assembly guides with 3D-printable enclosures</li>
+                        <li>Deploy 10-20 node mesh in a local community</li>
+                        <li>Implement basic Pneuma "Reflex" compute (on-device AI services)</li>
+                        <li>Build first Symbolons (basic apps for The Agora)</li>
+                        <li>Test Layer 3 backbone links (both 900 MHz LoRa and 5 GHz Wi-Fi PTP)</li>
+                        <li>Implement Pneuma Vault (lightweight token ledger)</li>
+                    </ul>
+                </div>
+                
+                <div class="action-list">
+                    <h4>Phase 3: Federation (Months 18-36)</h4>
+                    <ul>
+                        <li>Multiple communities running independent Lyceum networks</li>
+                        <li>Inter-network federation protocols and Pneuma "Cortex" compute (distributed MoE)</li>
+                        <li>Mature Agora ecosystem with vetted Symbolons</li>
+                        <li>Shared knowledge base and best practices library</li>
+                        <li>Hardware manufacturer partnerships for open-source designs</li>
+                        <li>Educational programs for setup, operation, and governance</li>
+                        <li>Establish legal frameworks for community ownership</li>
+                    </ul>
+                </div>
+                
+                <h3>How to Contribute Right Now</h3>
+                
+                <ul>
+                    <li><strong>Developers:</strong> Fork the repository! Help build AIWT firmware, universal Pneuma Daemon, Symbolon app framework, mobile clients</li>
+                    <li><strong>Hardware Hackers:</strong> Design and share 3D-printable enclosures for AIWT builds, high-gain antennas for L1/L3, solar charging solutions</li>
+                    <li><strong>Radio Enthusiasts:</strong> Test and document LoRa range, optimize antenna placement, contribute to L3 backbone architecture</li>
+                    <li><strong>AI/ML Engineers:</strong> Optimize NPU-accelerated models, contribute to Pneuma Reflex/Cortex architecture, develop federated training protocols</li>
+                    <li><strong>Writers/Educators:</strong> Create documentation, tutorials, educational materials explaining concepts and assembly</li>
+                    <li><strong>Everyone:</strong> Build or buy a node! Single most important contribution is expanding physical network footprint</li>
+                </ul>
+                
+                <h3>Philosophical Function</h3>
+                
+                <p><strong>Praxis and Infrastructure</strong> - Turning individual clarity (Whetstone), interpersonal empathy (Sensus), and public witness (Kintsugi) into <strong>actual physical infrastructure</strong> for collective flourishing. This is applied existentialism: building the just society we want to live in when there's no cosmic blueprint.</p>
+                
+                <h3>Why This is Necessary</h3>
+                
+                <div class="quote">
+                    "You can't build authentic rebellion on corporate infrastructure. The cloud is not neutral ground—it's owned by Amazon, Google, Microsoft. True digital sovereignty requires owning the physical layer."
+                </div>
+                
+                <p>The Lyceum Network is the culmination of the framework: <strong>building the alternative infrastructure that makes the rebellion permanent</strong>.</p>
+            </section>
+            
+            <section id="technical">
+                <h2>Technical Overview</h2>
+                
+                <h3>System Comparison Matrix</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dimension</th>
+                            <th>Sensus</th>
+                            <th>The Whetstone</th>
+                            <th>Kintsugi</th>
+                            <th>Lyceum Network</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sphere</strong></td>
+                            <td>Social/Emotional</td>
+                            <td>Private/Cognitive</td>
+                            <td>Public/Witness</td>
+                            <td>Collective/Infrastructure</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mode</strong></td>
+                            <td>Anonymous exchange</td>
+                            <td>Solitary dialogue</td>
+                            <td>Curated gallery</td>
+                            <td>Mesh network + deliberation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Role</strong></td>
+                            <td>Serendipity engine</td>
+                            <td>Socratic interlocutor</td>
+                            <td>Curator & pattern finder</td>
+                            <td>Facilitator + moderator</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Model</strong></td>
+                            <td>Gemini 2.5 Flash</td>
+                            <td>Mistral Instruct 7B (local)</td>
+                            <td>Mistral Instruct 7B</td>
+                            <td>Mistral Instruct 7B (federated)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Privacy Model</strong></td>
+                            <td>Ephemeral by design</td>
+                            <td>Local-first (never leaves device)</td>
+                            <td>Optional anonymity</td>
+                            <td>Federated + encrypted</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temporality</strong></td>
+                            <td>Ephemeral (60 days)</td>
+                            <td>Session-based</td>
+                            <td>Permanent archive</td>
+                            <td>Persistent network</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Infrastructure</strong></td>
+                            <td>Cloud (Firebase/Cloud Run)</td>
+                            <td>Edge (on-device)</td>
+                            <td>Cloud (standard hosting)</td>
+                            <td>Physical mesh (peer-to-peer)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Metrics</strong></td>
+                            <td>None (anti-metrics)</td>
+                            <td>Personal only</td>
+                            <td>None (anti-metrics)</td>
+                            <td>Deliberation quality only</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Capture Risk</strong></td>
+                            <td>Low (ephemeral + anonymous)</td>
+                            <td>None (fully local)</td>
+                            <td>Moderate (relies on hosting)</td>
+                            <td>None (peer-to-peer mesh)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>License</strong></td>
+                            <td>GNU GPL v3.0</td>
+                            <td>GNU GPL v3.0</td>
+                            <td>GNU GPL v3.0</td>
+                            <td>GNU GPL v3.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Shared Philosophical Principles</h3>
+                
+                <ol>
+                    <li><strong>Open-source everything</strong> - Code, models, datasets, hardware designs—all auditable and licensed under GNU GPL v3.0</li>
+                    <li><strong>Privacy by default</strong> - No tracking, no analytics beyond what's necessary</li>
+                    <li><strong>Transparent reasoning</strong> - Every AI decision includes the reasoning chain</li>
+                    <li><strong>Human agency</strong> - AI facilitates, never replaces human judgment</li>
+                    <li><strong>Anti-capture mechanisms</strong> - GPL v3.0 ensures derivative works remain free; governance structures prevent single-entity control</li>
+                    <li><strong>Decentralization</strong> - No single point of failure or control</li>
+                    <li><strong>Forkable by design</strong> - Anyone can take it and build something better</li>
+                </ol>
+                
+                <h3>The Four-Act Movement</h3>
+                
+                <p><strong>Act I (Sensus):</strong> Break addiction to performative behavior<br>
+                ↓<br>
+                <strong>Act II (The Whetstone):</strong> Develop capacity for independent thought<br>
+                ↓<br>
+                <strong>Act III (Kintsugi):</strong> Share transformation to inspire others<br>
+                ↓<br>
+                <strong>Act IV (The Lyceum Network):</strong> Build permanent infrastructure for collective flourishing</p>
+                
+                <div class="quote">
+                    "Each act prepares you for the next. Sensus teaches you to feel authentically. The Whetstone teaches you to think independently. Kintsugi teaches you to witness transformation publicly. The Lyceum Network gives you the infrastructure to build alternatives that can't be captured or shut down."
+                </div>
+            </section>
+            
+            <section id="closing">
+                <h2>Join the Rebellion</h2>
+                
+                <div class="vision-box">
+                    <h3>This is a Movement, Not a Product</h3>
+                    <p>The Authentic Rebellion Framework is open-source, forkable, and ungovernable by design. You don't need permission to use it, adapt it, or build on it.</p>
+                    
+                    <p><strong>How to participate:</strong></p>
+                    <ul>
+                        <li><strong>Use Sensus</strong> - Visit <a href="https://sensus.yargnad.com" style="color: white; text-decoration: underline;">sensus.yargnad.com</a> and submit your first expression</li>
+                        <li><strong>Build a Whetstone</strong> - Hardware designs and software will be released as open-source</li>
+                        <li><strong>Share your Kintsugi story</strong> - When the platform launches, contribute your transformation</li>
+                        <li><strong>Start a Lyceum node</strong> - Documentation coming soon for setting up mesh networks</li>
+                        <li><strong>Fork and improve</strong> - Take any of these projects and make them better</li>
+                    </ul>
+                </div>
+                
+                <div class="quote">
+                    "The trajectory of AI is already set—it will be used in governance, education, and civic life. The question is whether it's extractive AI (surveillance, manipulation, control) or empowering AI (deliberation, reflection, connection). We're prototyping the alternative path."
+                </div>
+                
+                <p><strong>That's praxis. That's rebellion. That's hope.</strong></p>
+            </section>
+        </main>
+        
+        <footer>
+            <p><strong>The Authentic Rebellion Framework</strong></p>
+            <p>Building Infrastructure for Human Flourishing in the Age of AI</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">Last updated: November 9, 2025</p>
+            <p style="font-size: 0.9em;"><strong>All projects licensed under GNU GPL v3.0</strong></p>
+            <p style="font-size: 0.9em;">Open-source • Forkable • Ungovernable • Built with philosophical intent</p>
+            <p style="font-size: 0.8em; margin-top: 15px; opacity: 0.7;">This framework and all associated projects are permanently dedicated to the commons. No corporation can capture what belongs to everyone.</p>
+        </footer>
+    </div>
+</body>
+</html>
