@@ -41,8 +41,8 @@ A physical AI device that acts as a Socratic interlocutor—challenging assumpti
 
 - **Status:** 🔨 HARDWARE ORDERED
 - **Repository:** [github.com/yargnad/The-Whetstone](https://github.com/yargnad/The-Whetstone)
-- **Platform:** Radxa Rock 5B+ (24GB RAM)
-- **Tech:** Ollama, Mistral Instruct 7B (local), RAG, Whisper STT
+- **Platform:** Radxa Rock 5B+ (24GB RAM, Rockchip RK3588)
+- **Tech:** Ollama, Mistral Instruct 7B Q4_K_M (local), Persona-based RAG, Whisper STT, Piper TTS
 - **License:** GNU GPL v3.0
 
 **Why Physical?**
