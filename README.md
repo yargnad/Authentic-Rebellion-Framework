@@ -8,7 +8,7 @@
 
 The Authentic Rebellion Framework is a four-act movement for escaping the Performance Prison and building authentic alternatives to extractive technology. Each act represents a stage in the journey from individual detoxification to collective infrastructure.
 
-**Live Framework Documentation:** [https://yargnad.github.io/The-Authentic-Rebellion-Framework/](https://yargnad.github.io/The-Authentic-Rebellion-Framework/)
+**Live Framework Documentation:** [https://rebellion.musubiaccord.org](https://rebellion.musubiaccord.org)
 
 ---
 
@@ -209,7 +209,7 @@ This ensures they will always remain free and open-source. See the [LICENSE](LIC
 
 ## Contact & Links
 
-- **Framework Documentation:** [yargnad.github.io/The-Authentic-Rebellion-Framework](https://yargnad.github.io/The-Authentic-Rebellion-Framework/)
+- **Framework Documentation:** [rebellion.musubiaccord.org](https://rebellion.musubiaccord.org)
 - **Sensus (Live):** [sensus.yargnad.com](https://sensus.yargnad.com)
 - **The Lyceum Network:** [github.com/yargnad/The-Lyceum](https://github.com/yargnad/The-Lyceum)
 
