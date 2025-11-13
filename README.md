@@ -21,7 +21,7 @@ An anti-social social network designed to break addiction patterns created by pe
 
 - **Status:** ✅ LIVE
 - **URL:** [https://sensus.yargnad.com](https://sensus.yargnad.com)
-- **Repository:** [github.com/yargnad/sensus-app](https://github.com/yargnad/sensus-app)
+- **Repository:** [github.com/yargnad/Sensus](https://github.com/yargnad/Sensus)
 - **Tech:** React, Node.js, MongoDB, Gemini 2.5 Flash
 - **License:** GNU GPL v3.0
 
