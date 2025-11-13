@@ -40,15 +40,20 @@ private/
 # Essay drafts - work in progress
 The Authentic Rebellion - Second Master Draft.md
 The Authentic Rebellion - Third Master Draft.md
+The Authentic Rebellion - Fourth Master Draft.md
 authentic_rebellion_complete_revisions.txt
 CONTEXT.md
 
 # Build/conversion scripts
 convert_essay.py
+convert_fourth_draft.py
 *.pyc
 __pycache__/
 
-# Session notes and miscellaneous markdown
+# Miscellaneous workspace files
 kentw-youtube.md
 consolidate.js
 sensus-codebase.txt
+essay.html
+deploy.ps1
+restart.ps1
