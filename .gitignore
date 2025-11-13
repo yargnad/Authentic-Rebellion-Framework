@@ -41,3 +41,14 @@ private/
 The Authentic Rebellion - Second Master Draft.md
 The Authentic Rebellion - Third Master Draft.md
 authentic_rebellion_complete_revisions.txt
+CONTEXT.md
+
+# Build/conversion scripts
+convert_essay.py
+*.pyc
+__pycache__/
+
+# Session notes and miscellaneous markdown
+kentw-youtube.md
+consolidate.js
+sensus-codebase.txt
