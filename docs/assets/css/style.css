@@ -1,0 +1,283 @@
+/* Wabi-Sabi Aesthetic for The Authentic Rebellion */
+
+:root {
+    /* Color Palette - Kintsugi Inspired */
+    --bg-cream: #FAF9F6;
+    --text-dark: #2C2C2C;
+    --gold-accent: #C9A961;
+    --gold-muted: #B8860B;
+    --border-subtle: #E8E6E0;
+    --nav-bg: #F7F5F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.8;
+    color: var(--text-dark);
+    background-color: var(--bg-cream);
+    background-image: 
+        linear-gradient(rgba(200, 200, 200, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 200, 200, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Sidebar Navigation */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--nav-bg);
+    border-right: 1px solid var(--border-subtle);
+    overflow-y: auto;
+    padding: 2rem 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.site-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gold-accent);
+    font-family: Georgia, serif;
+}
+
+.site-title a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.nav-section {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border-left: 3px solid transparent;
+    padding-left: 0.75rem;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.nav-section:hover,
+.nav-section.active {
+    border-left-color: var(--gold-accent);
+    color: var(--gold-muted);
+}
+
+.nav-part {
+    margin: 1rem 0;
+}
+
+.nav-part-title {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    border-left: 3px solid transparent;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.nav-part-title:hover,
+.nav-part-title.active {
+    border-left-color: var(--gold-accent);
+    color: var(--gold-muted);
+}
+
+.nav-chapter {
+    font-size: 0.85rem;
+    color: #666;
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.nav-chapter:hover,
+.nav-chapter.active {
+    border-left-color: var(--gold-accent);
+    color: var(--gold-muted);
+    padding-left: 1.75rem;
+}
+
+/* Main Content */
+#content {
+    margin-left: 280px;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+}
+
+.reading-width {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    margin: 2rem 0 1rem 0;
+    color: var(--text-dark);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--gold-accent);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gold-accent);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: var(--gold-muted);
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Links */
+a {
+    color: var(--gold-muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: var(--gold-accent);
+}
+
+/* Lists */
+ul, ol {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+/* Blockquotes / Pull Quotes */
+blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--gold-accent);
+    background-color: rgba(201, 169, 97, 0.05);
+    font-style: italic;
+    color: #555;
+}
+
+/* Strong emphasis */
+strong {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+em {
+    font-style: italic;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 4rem;
+}
+
+/* Back to top link */
+.back-to-top {
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--gold-muted);
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #sidebar {
+        width: 240px;
+    }
+    
+    #content {
+        margin-left: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+    }
+    
+    #content {
+        margin-left: 0;
+        padding: 2rem 1.5rem;
+    }
+    
+    .reading-width {
+        max-width: 100%;
+    }
+    
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    #sidebar {
+        display: none;
+    }
+    
+    #content {
+        margin-left: 0;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
