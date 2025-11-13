@@ -9,11 +9,11 @@ import re
 def markdown_to_html(md_content):
     """Convert markdown to HTML with proper formatting"""
     
-    # Convert italics (*text* to <em>text</em>)
-    html = re.sub(r'\*([^\*]+)\*', r'<em>\1</em>', md_content)
+    # Convert bold (**text** to <strong>text</strong>) - MUST come before italics
+    html = re.sub(r'\*\*([^\*]+)\*\*', r'<strong>\1</strong>', md_content)
     
-    # Convert bold (**text** to <strong>text</strong>)
-    html = re.sub(r'\*\*([^\*]+)\*\*', r'<strong>\1</strong>', html)
+    # Convert italics (*text* to <em>text</em>)
+    html = re.sub(r'\*([^\*]+)\*', r'<em>\1</em>', html)
     
     # Convert headers
     html = re.sub(r'^# (.+)$', r'<h1>\1</h1>', html, flags=re.MULTILINE)
