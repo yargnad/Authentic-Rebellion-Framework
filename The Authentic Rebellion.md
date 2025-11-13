@@ -1,5 +1,7 @@
 # The Authentic Rebellion
 
+**By Ken Tsugi**
+
 ## Preface: An Invitation to a Journey
 
 This book began not as an academic project, but as a long, weary sigh. For years, I've felt like a champion of forgotten worlds and lost ideas —a journey that has often been solitary. My perspective on the world isn't from a university, but from the scar tissue earned in a career spent deep inside the very machine this book seeks to understand.
