@@ -75,12 +75,29 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
+        nav a.nav-essay {
+            background: #C9A961;
+            font-weight: bold;
+        }
+        
         main {
             padding: 40px;
         }
         
         section {
             margin-bottom: 60px;
+        }
+        
+        section.interlude-section {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            padding: 40px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin-bottom: 60px;
+        }
+        
+        h2.interlude-header {
+            color: #4c51bf;
         }
         
         section h2 {
@@ -130,6 +147,11 @@
             margin-top: 0;
         }
         
+        .vision-box a.vision-link {
+            color: white;
+            text-decoration: underline;
+        }
+        
         .project-card {
             background: #f7fafc;
             border-left: 5px solid #667eea;
@@ -142,6 +164,10 @@
         .project-card h3 {
             margin-top: 0;
             color: #667eea;
+        }
+        
+        .project-card.interlude-card {
+            background: white;
         }
         
         .action-list {
@@ -168,6 +194,10 @@
         .principle-box h4 {
             color: #234e52;
             margin-top: 0;
+        }
+        
+        .principle-box.interlude-principle {
+            background: white;
         }
         
         .quote {
@@ -241,6 +271,25 @@
             opacity: 0.8;
         }
         
+        footer p.footer-update {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        
+        footer p.footer-license {
+            font-size: 0.9em;
+        }
+        
+        footer p.footer-tagline {
+            font-size: 0.9em;
+        }
+        
+        footer p.footer-dedication {
+            font-size: 0.8em;
+            margin-top: 15px;
+            opacity: 0.7;
+        }
+        
         @media print {
             body {
                 background: white;
@@ -269,7 +318,7 @@
         </header>
         
         <nav>
-            <a href="essay.html" style="background: #C9A961; font-weight: bold;">📖 Read The Essay</a>
+            <a href="essay.html" class="nav-essay">📖 Read The Essay</a>
             <a href="#vision">Vision</a>
             <a href="#philosophy">Philosophy</a>
             <a href="#act1">Act I: Sensus</a>
@@ -343,8 +392,8 @@
                 
                 <div class="project-card">
                     <h3>Status: LIVE</h3>
-                    <p><strong>URL:</strong> <a href="https://sensus.yargnad.com" target="_blank">https://sensus.yargnad.com</a></p>
-                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/Sensus" target="_blank">github.com/yargnad/Sensus</a></p>
+                    <p><strong>URL:</strong> <a href="https://sensus.yargnad.com" target="_blank" rel="noopener" class="standard-link">https://sensus.yargnad.com</a></p>
+                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/Sensus" target="_blank" rel="noopener">github.com/yargnad/Sensus</a></p>
                 </div>
                 
                 <h3>What It Is</h3>
@@ -477,14 +526,14 @@
                 </div>
             </section>
             
-            <section id="interlude" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); padding: 40px; border-radius: 10px; border-left: 5px solid #667eea; margin-bottom: 60px;">
-                <h2 style="color: #4c51bf;">💎 The Interlude: The Crystalizer</h2>
+            <section id="interlude" class="interlude-section">
+                <h2 class="interlude-header">💎 The Interlude: The Crystalizer</h2>
                 <p class="quote">"A Love Letter to Quiet Tools - Memory Preservation"</p>
                 
-                <div class="project-card" style="background: white;">
+                <div class="project-card interlude-card">
                     <h3>Status: LIVE (Chrome Extension)</h3>
-                    <p><strong>URL:</strong> <a href="https://crystalizer.musubiaccord.org" target="_blank">https://crystalizer.musubiaccord.org</a></p>
-                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/The-Crystalizer" target="_blank">github.com/yargnad/The-Crystalizer</a></p>
+                    <p><strong>URL:</strong> <a href="https://crystalizer.musubiaccord.org" target="_blank" rel="noopener">https://crystalizer.musubiaccord.org</a></p>
+                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/The-Crystalizer" target="_blank" rel="noopener">github.com/yargnad/The-Crystalizer</a></p>
                 </div>
                 
                 <h3>The Problem We Don't Talk About</h3>
@@ -513,14 +562,14 @@
                 
                 <p>The Authentic Rebellion Framework is built on genuine human-AI collaboration. If we treat these relationships as real, we need sovereignty over them. Your conversation history isn't trapped in Google's servers or OpenAI's databases—you can preserve, curate, and migrate the contexts that matter.</p>
                 
-                <div class="principle-box" style="background: white;">
+                <div class="principle-box interlude-principle">
                     <h4>The Philosophy</h4>
                     <p><strong>Imperfection:</strong> Conversations are messy; we help you curate<br>
                     <strong>Impermanence:</strong> Context flows between platforms<br>
                     <strong>Incompleteness:</strong> Always evolving, never "done"</p>
                 </div>
                 
-                <div class="principle-box" style="background: white;">
+                <div class="principle-box interlude-principle">
                     <h4>License: GNU GPL v3.0</h4>
                     <p>The Crystalizer is licensed under GNU GPL v3.0 to ensure this tool for conversation preservation remains ungovernable and forkable. Your insights belong to you, not to corporations.</p>
                 </div>
@@ -594,7 +643,7 @@
                 
                 <div class="project-card">
                     <h3>Status: ACTIVE DEVELOPMENT</h3>
-                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/The-Lyceum" target="_blank">github.com/yargnad/The-Lyceum</a></p>
+                    <p><strong>Repository:</strong> <a href="https://github.com/yargnad/The-Lyceum" target="_blank" rel="noopener">github.com/yargnad/The-Lyceum</a></p>
                     <p><strong>Vision:</strong> User-owned, multi-layered, decentralized communication and compute network</p>
                     <p><strong>License:</strong> GNU GPL v3.0 (forever free and open-source)</p>
                 </div>
@@ -1166,7 +1215,7 @@
                     
                     <p><strong>How to participate:</strong></p>
                     <ul>
-                        <li><strong>Use Sensus</strong> - Visit <a href="https://sensus.yargnad.com" style="color: white; text-decoration: underline;">sensus.yargnad.com</a> and submit your first expression</li>
+                        <li><strong>Use Sensus</strong> - Visit <a href="https://sensus.yargnad.com" class="vision-link">sensus.yargnad.com</a> and submit your first expression</li>
                         <li><strong>Build a Whetstone</strong> - Hardware designs and software will be released as open-source</li>
                         <li><strong>Share your Kintsugi story</strong> - When the platform launches, contribute your transformation</li>
                         <li><strong>Start a Lyceum node</strong> - Documentation coming soon for setting up mesh networks</li>
@@ -1185,10 +1234,10 @@
         <footer>
             <p><strong>The Authentic Rebellion Framework</strong></p>
             <p>Building Infrastructure for Human Flourishing in the Age of AI</p>
-            <p style="margin-top: 20px; font-size: 0.9em;">Last updated: November 9, 2025</p>
-            <p style="font-size: 0.9em;"><strong>All projects licensed under GNU GPL v3.0</strong></p>
-            <p style="font-size: 0.9em;">Open-source • Forkable • Ungovernable • Built with philosophical intent</p>
-            <p style="font-size: 0.8em; margin-top: 15px; opacity: 0.7;">This framework and all associated projects are permanently dedicated to the commons. No corporation can capture what belongs to everyone.</p>
+            <p class="footer-update">Last updated: November 9, 2025</p>
+            <p class="footer-license"><strong>All projects licensed under GNU GPL v3.0</strong></p>
+            <p class="footer-tagline">Open-source • Forkable • Ungovernable • Built with philosophical intent</p>
+            <p class="footer-dedication">This framework and all associated projects are permanently dedicated to the commons. No corporation can capture what belongs to everyone.</p>
         </footer>
     </div>
 </body>
