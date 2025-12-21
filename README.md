@@ -1,6 +1,6 @@
 # The Authentic Rebellion Framework
 
-**Building Infrastructure for Human Flourishing in the Age of AI**
+## Building Infrastructure for Human Flourishing in the Age of AI
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -15,7 +15,8 @@ The Authentic Rebellion Framework is a four-act movement for escaping the Perfor
 ## The Four Acts
 
 ### Act I: Sensus - Detoxification
-**"Learning to feel again"**
+
+#### "Learning to feel again"
 
 An anti-social social network designed to break addiction patterns created by performative social media. Anonymous, ephemeral, one-to-one emotional exchanges that restore authentic human connection.
 
@@ -26,6 +27,7 @@ An anti-social social network designed to break addiction patterns created by pe
 - **License:** GNU GPL v3.0
 
 **Key Features:**
+
 - Complete anonymity (no profiles, usernames, metrics)
 - 24-hour cooldown prevents addiction loops
 - AI-powered emotional resonance matching
@@ -35,7 +37,8 @@ An anti-social social network designed to break addiction patterns created by pe
 ---
 
 ### Act II: The Whetstone - Cognitive Strengthening
-**"Learning to think again"**
+
+#### "Learning to think again"
 
 A physical AI device that acts as a Socratic interlocutor—challenging assumptions, exposing contradictions, and helping you reason toward clarity about your beliefs and values.
 
@@ -46,12 +49,14 @@ A physical AI device that acts as a Socratic interlocutor—challenging assumpti
 - **License:** GNU GPL v3.0
 
 **Why Physical?**
+
 - **Presence over portability** - Stays in one place; you go to it intentionally
 - **Privacy by architecture** - Local-first AI; conversations never leave your home
 - **Tactile ritual** - Physical objects create habits (like journaling, but dialectical)
 - **Sovereignty** - You own it; can't be remotely disabled or paywalled
 
 **Philosophical Immune System:**
+
 1. Epistemic Humility - Identify uncertainties before answering
 2. Bias Detection - Check for hidden assumptions
 3. Consequentialist Gate - Who benefits? Who is harmed?
@@ -62,7 +67,8 @@ A physical AI device that acts as a Socratic interlocutor—challenging assumpti
 ---
 
 ### Act III: Kintsugi - Public Witness
-**"Making the wounds golden"**
+
+#### "Making the wounds golden"
 
 A public gallery where people share their "broken philosophies" and how they were repaired. Named after the Japanese art of mending broken pottery with gold—making the cracks part of the object's beauty.
 
@@ -75,6 +81,7 @@ A public gallery where people share their "broken philosophies" and how they wer
 Most of us inherit broken philosophies from trauma, indoctrination, or cultural programming. Kintsugi celebrates the **visible repair work**—the intellectual and emotional labor of rebuilding coherent meaning after disillusionment.
 
 **How It Works:**
+
 1. Submit your story (what you believed, what broke it, how you repaired it, what "gold" you used)
 2. Stories displayed as visual artifacts with cracks and golden repairs
 3. AI helps articulate transformations and surface related repair patterns
@@ -84,7 +91,8 @@ Most of us inherit broken philosophies from trauma, indoctrination, or cultural 
 ---
 
 ### Act IV: The Lyceum Network - Collective Infrastructure
-**"Building the alternative internet"**
+
+#### "Building the alternative internet"
 
 A user-owned, multi-layered, decentralized communication and compute network designed as a public commons. True digital sovereignty requires owning the physical layer.
 
@@ -94,6 +102,7 @@ A user-owned, multi-layered, decentralized communication and compute network des
 - **License:** GNU GPL v3.0
 
 **Core Innovations:**
+
 1. **AI-Enhanced Walkie-Talkie (AIWT)** - Voice over LoRa mesh via on-device STT→text→TTS
 2. **NPU-Accelerated Stack** - SenseVoice-RKNN (STT) + paroli (TTS) on Rockchip hardware
 3. **"Two-Brain" Power Architecture** - Sleep/wake via hardware interrupt for battery efficiency
@@ -102,11 +111,13 @@ A user-owned, multi-layered, decentralized communication and compute network des
 6. **Symbolon Ecosystem** - Vetted on-device apps hosted locally
 
 **Three-Layer Architecture:**
+
 - **Layer 1:** Access Mesh (900 MHz LoRa) - resilient, low-power, long-range for everyone
 - **Layer 2:** Utility Fabric (Wi-Fi HaLow) - high-bandwidth local network, hosts Pneuma compute
 - **Layer 3:** Backbone Link (Two-Path) - encrypted long-haul PTP connections
 
 **Build Paths:**
+
 - **Scout ($25-30):** Phone-reliant, low-cost entry point
 - **Sovereign ($120-145):** Self-contained AIWT with on-device AI, first Pneuma Seed Node
 
@@ -141,6 +152,7 @@ This framework demonstrates that AI doesn't have to optimize for engagement or e
 **All projects licensed under GNU GPL v3.0** to ensure they can never be captured by corporate interests. Any derivative work must remain free and open. The code belongs to the commons, forever.
 
 Additional protections:
+
 - ✅ Open-source everything (code, models, hardware designs)
 - ✅ Privacy by default (no tracking beyond necessity)
 - ✅ Transparent reasoning (AI decisions include reasoning chains)
